@@ -3,7 +3,7 @@ import Button from "./Button";
 
 export default function Header() {
   return (
-    <section className="flex justify-between items-start py-16 w-full">
+    <section className="flex justify-between items-start pt-16 w-full">
       <div className="flex-1 flex flex-col justify-center items-start">
         <h1 className="font-poppins font-extrabold text-5xl text-accent leading-snug">
           Hi There! <br />

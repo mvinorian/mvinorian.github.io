@@ -5,7 +5,7 @@ export default function HomePage() {
     <>
       <Header />
       <Projects />
-      <Experiences />
+      {/* <Experiences /> */}
     </>
   );
 }
