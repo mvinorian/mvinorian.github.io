@@ -11,7 +11,10 @@ export default function Projects() {
 
       <ul className="flex flex-row justify-between items-start flex-wrap mt-8">
         {projects.map((project, index) => (
-          <li className={`${index === 0 ? "ml-0" : "ml-2"} h-full`}>
+          <li
+            key={project.id}
+            className={`${index === 0 ? "ml-0" : "ml-2"} h-full`}
+          >
             <ProjectCard
               key={project.id}
               image={project.image}

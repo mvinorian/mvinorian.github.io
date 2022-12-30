@@ -28,8 +28,8 @@ export default function ProjectCard({
             {title}
           </h3>
 
-          {techs.map((tech) => (
-            <img src={tech} alt="" className="ml-2" />
+          {techs.map((tech, index) => (
+            <img key={index} src={tech} alt="" className="ml-2" />
           ))}
         </div>
 

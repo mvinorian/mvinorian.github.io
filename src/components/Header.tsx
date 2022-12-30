@@ -11,9 +11,9 @@ export default function Header() {
         </h1>
 
         <p className="font-poppins text-sm text-accent leading-relaxed max-w-lg mt-8">
-          I'm an Informatics Engineering Student at Sepuluh Nopember Institute
-          of Technology, Surabaya. Currently learning to work with React
-          Ecosystem.
+          I&apos;m an Informatics Engineering Student at Sepuluh Nopember
+          Institute of Technology, Surabaya. Currently learning to work with
+          React Ecosystem.
         </p>
 
         <Button href="/about" className="mt-8">
