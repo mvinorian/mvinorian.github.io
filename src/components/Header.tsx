@@ -22,7 +22,7 @@ export default function Header() {
 
         <div className="flex flex-row justify-start items-center mt-8">
           <Link
-            href="vinorianmuhammad@gmail.com"
+            href="mailto:vinorianmuhammad@gmail.com"
             className="flex justify-start items-center font-poppins text-sm text-accent hover:text-secondary"
           >
             <img src="/icons/gmail.svg" alt="" />
