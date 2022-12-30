@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+:root {
+  --tw-color-primary: 19 24 48;
+  --color-primary: rgb(var(--tw-color-primary));
+
+  --tw-color-secondary: 71 222 146;
+  --color-secondary: rgb(var(--tw-color-secondary));
+
+  --tw-color-accent: 218 218 218;
+  --color-accent: rgb(var(--tw-color-accent));
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    circle at 15% 100%,
+    #47de92 0%,
+    #71deb6 60%,
+    #ccdef9 100%
+  );
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
