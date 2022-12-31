@@ -45,7 +45,7 @@ export default function Navbar() {
         <ul
           className={`list-none ${
             toggle ? "flex" : "hidden"
-          } flex-col justify-end items-end absolute top-16 px-2 py-2 rounded-sm bg-primary outline outline-2 outline-secondary`}
+          } flex-col justify-end items-end absolute z-50 top-16 px-2 py-2 rounded-sm bg-primary outline outline-2 outline-secondary`}
         >
           {navLinks.map((navLink, index) => (
             <li key={navLink.id} className={index === 0 ? "mt-0" : "mt-2"}>
