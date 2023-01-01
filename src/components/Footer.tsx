@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,15 +10,15 @@ export default function Footer() {
 
       <div className="flex justify-center items-center">
         <Link href="https://github.com/mvinorian/" className="mr-2">
-          <img src="/icons/github.svg" alt="" />
+          <Image src="/icons/github.svg" alt="" width={24} height={24} />
         </Link>
 
         <Link href="https://www.linkedin.com/in/mvinorian/" className="mx-2">
-          <img src="/icons/linkedin.svg" alt="" />
+          <Image src="/icons/linkedin.svg" alt="" width={24} height={24} />
         </Link>
 
         <Link href="mailto:vinorianmuhammad@gmail.com" className="ml-2">
-          <img src="/icons/gmail.svg" alt="" />
+          <Image src="/icons/gmail.svg" alt="" width={24} height={24} />
         </Link>
       </div>
     </footer>
