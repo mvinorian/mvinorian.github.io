@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { navLinks } from "../constants";
 
@@ -8,9 +9,11 @@ export default function Navbar() {
   return (
     <nav className="flex justify-between items-center w-full">
       <Link href="/">
-        <img
-          src="/icons/logo.svg"
+        <Image
+          src="icons/logo.svg"
           alt=""
+          width={1024}
+          height={1024}
           className="w-12 h-12 object-contain"
         />
       </Link>
@@ -35,9 +38,11 @@ export default function Navbar() {
       </ul>
 
       <div className="flex-1 sm:hidden flex flex-col justify-center items-end">
-        <img
+        <Image
           src={toggle ? "/icons/close.svg" : "/icons/menu.svg"}
           alt=""
+          width={24}
+          height={24}
           className="cursor-pointer"
           onClick={() => setToggle((prev) => !prev)}
         />
