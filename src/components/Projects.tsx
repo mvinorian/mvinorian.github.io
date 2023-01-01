@@ -9,7 +9,7 @@ export default function Projects() {
         Featured Projects
       </h2>
 
-      <div className="flex flex-wrap justify-start items-stretch w-full mt-8">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 grid-flow-row gap-4 w-full mt-8">
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project}>
             {project.content}

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ReactNode } from "react";
 
 type ProjectCardProps = {
@@ -19,8 +20,14 @@ export default function ProjectCard({
   repository,
 }: ProjectCardProps) {
   return (
-    <div className="flex flex-col justify-start mr-4 my-2 max-w-xs rounded-sm outline outline-1 outline-accent">
-      <img src={image} alt="" className="w-full object-contain" />
+    <div className="flex flex-col justify-start w-full rounded-md outline outline-1 outline-gray-700">
+      <Image
+        src={image}
+        alt=""
+        width={536}
+        height={312}
+        className="w-full object-contain"
+      />
 
       <div className="flex flex-col justify-between items-start h-full">
         <div className="flex flex-col justify-start items-start mx-4 my-4">
@@ -30,7 +37,14 @@ export default function ProjectCard({
             </h3>
 
             {techs.map((tech, index) => (
-              <img key={index} src={tech} alt="" className="ml-2" />
+              <Image
+                key={index}
+                src={tech}
+                alt=""
+                width={24}
+                height={24}
+                className="w-6 h-6 object-contain ml-2"
+              />
             ))}
           </div>
 
@@ -39,12 +53,12 @@ export default function ProjectCard({
           </p>
         </div>
 
-        <div className="flex flex-row justify-start items-start m-4">
+        <div className="flex flex-row justify-start items-center m-4">
           <Link
             href={repository}
             className="flex justify-start items-center font-poppins text-sm text-accent hover:text-secondary"
           >
-            <img src="/icons/github.svg" alt="" />
+            <Image src="/icons/github.svg" alt="" width={24} height={24} />
             <p className="ml-2 underline underline-offset-4">Repository</p>
           </Link>
 
@@ -54,8 +68,8 @@ export default function ProjectCard({
               live === null ? "hidden" : "flex"
             } justify-start items-center font-poppins text-sm text-accent hover:text-secondary ml-4`}
           >
-            <img src="/icons/page.svg" alt="" />
-            <p className="ml-2 underline underline-offset-4">Open Live Site</p>
+            <Image src="/icons/page.svg" alt="" width={24} height={24} />
+            <p className="ml-2 underline underline-offset-4">Live Site</p>
           </Link>
         </div>
       </div>
