@@ -17,8 +17,8 @@ export default function HomePage() {
       <div className="relative z-10">
         <Header />
         <Projects />
+        <Experiences />
       </div>
-      {/* <Experiences /> */}
     </>
   );
 }
