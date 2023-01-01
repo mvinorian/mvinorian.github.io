@@ -1,9 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { navLinks } from "../constants";
 
 export default function Navbar() {
+  const router = useRouter();
+  const baseRoute = "/" + router.route.split("/")[1];
+
   const [toggle, setToggle] = useState(false);
 
   return (
@@ -29,7 +33,11 @@ export default function Navbar() {
           <li key={navLink.id} className="ml-4">
             <Link
               href={navLink.link}
-              className="font-poppins text-accent hover:text-secondary"
+              className={`font-poppins ${
+                navLink.link === baseRoute
+                  ? "text-secondary"
+                  : "text-accent hover:text-secondary"
+              }`}
             >
               {navLink.title}
             </Link>
@@ -50,13 +58,17 @@ export default function Navbar() {
         <ul
           className={`list-none ${
             toggle ? "flex" : "hidden"
-          } flex-col justify-end items-end absolute z-50 top-16 px-2 py-2 rounded-sm bg-primary outline outline-2 outline-secondary`}
+          } flex-col justify-end items-end absolute z-50 top-16 px-2 py-2 rounded-sm bg-primary outline outline-2 outline-gray-700`}
         >
           {navLinks.map((navLink, index) => (
             <li key={navLink.id} className={index === 0 ? "mt-0" : "mt-2"}>
               <Link
                 href={navLink.link}
-                className="font-poppins text-accent hover:text-secondary"
+                className={`font-poppins ${
+                  navLink.link === baseRoute
+                    ? "text-secondary"
+                    : "text-accent hover:text-secondary"
+                }`}
               >
                 {navLink.title}
               </Link>
