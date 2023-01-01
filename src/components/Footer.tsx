@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="flex justify-between items-center pt-64">
+    <footer className="flex justify-between items-center">
       <p className="flex-1 font-poppins text-sm text-accent">
         Copyright © 2022 Muhammad Ersya Vinorian
       </p>
