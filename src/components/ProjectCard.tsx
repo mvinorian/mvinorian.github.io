@@ -29,8 +29,8 @@ export default function ProjectCard({
         className="w-full object-contain"
       />
 
-      <div className="flex flex-col justify-between items-start h-full">
-        <div className="flex flex-col justify-start items-start mx-4 my-4">
+      <div className="flex flex-col justify-between items-start h-full p-4">
+        <div className="flex flex-col justify-start items-start">
           <div className="flex flex-row justify-start items-center">
             <h3 className="font-poppins font-semibold text-lg text-accent leading-relaxed mr-2">
               {title}
@@ -53,7 +53,7 @@ export default function ProjectCard({
           </p>
         </div>
 
-        <div className="flex flex-row justify-start items-center m-4">
+        <div className="flex flex-row justify-start items-center mt-6">
           <Link
             href={repository}
             className="flex justify-start items-center font-poppins text-sm text-accent hover:text-secondary"
