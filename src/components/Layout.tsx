@@ -5,7 +5,7 @@ import Navbar from "./Navbar";
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
-    <main className="bg-primary w-full overflow-hidden">
+    <main className="bg-primary flex flex-col items-center w-full overflow-hidden">
       <div className="flex flex-col justify-between items-center xl:max-w-screen-2xl w-full min-h-screen relative">
         <div className="bg-primary fixed md:px-28 sm:px-16 px-8 py-4 z-50 w-screen max-w-screen-2xl">
           <Navbar />
