@@ -11,7 +11,7 @@ export default function Layout({ children }: { children: ReactNode }) {
           <Navbar />
         </div>
 
-        <div className="flex-1 bg-transparent md:px-28 sm:px-16 px-8 pt-16 w-full relative z-10">
+        <div className="flex-1 bg-transparent md:px-28 sm:px-16 px-8 py-4 w-full relative z-10">
           {children}
         </div>
 
