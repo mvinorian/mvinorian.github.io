@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ReactNode } from "react";
 
-type ExperienceProps = {
+type ExperienceCardProps = {
   image: string;
   title: string;
   date: string;
@@ -10,13 +10,13 @@ type ExperienceProps = {
   techs: string[];
 };
 
-export default function Experience({
+export default function ExperienceCard({
   image,
   title,
   date,
   children,
   techs,
-}: ExperienceProps) {
+}: ExperienceCardProps) {
   return (
     <div className="flex flex-col justify-start w-full rounded-md outline outline-1 outline-gray-700">
       <Image
