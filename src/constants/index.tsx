@@ -14,14 +14,25 @@ export const navLinks = [
     title: "Experiences",
     link: "/experiences",
   },
-  {
-    id: "about",
-    title: "About",
-    link: "/about",
-  },
 ];
 
 export const projects = [
+  {
+    id: "project-itsexpo",
+    image: "/image/project-itsexpo.png",
+    title: "ITS Expo 2023",
+    techs: ["/icons/react.svg", "/icons/tailwind.svg"],
+    content: "ITS Expo 2023 main website.",
+    live: "https://expo-its.com",
+  },
+  {
+    id: "project-ukmexpo",
+    image: "/image/project-ukmexpo.png",
+    title: "UKM Expo 2023",
+    techs: ["/icons/react.svg", "/icons/tailwind.svg"],
+    content: "UKM Expo 2023 main website.",
+    live: "https://itsukmexpo.com",
+  },
   {
     id: "project-gpt3",
     image: "/image/project-gpt3.png",
@@ -42,15 +53,6 @@ export const projects = [
     repository: "https://github.com/mvinorian/hoobank",
     live: "https://mvinorian.github.io/hoobank/",
   },
-  {
-    id: "project-hellscape",
-    image: "/image/project-hellscape.png",
-    title: "Hellscape",
-    techs: ["/icons/java.svg"],
-    content: "Pixel art styled action game created using java.",
-    repository: "https://github.com/mvinorian/hellscape",
-    live: null,
-  },
 ];
 
 export const experiences = [
@@ -63,6 +65,14 @@ export const experiences = [
     techs: ["/icons/python.svg", "/icons/raspi.svg", "/icons/opencv.svg"],
   },
   {
+    id: "experience-ajk",
+    image: "/image/experience-lbe-ajk.png",
+    title: "Administrator of AJK Laboratorium ITS",
+    date: "April 2023 - Present",
+    content: "Learn to deploy laravel app using linux and nginx.",
+    techs: ["/icons/ubuntu.svg", "/icons/nginx.svg"],
+  },
+  {
     id: "experience-schematics",
     image: "/image/experience-schematics.png",
     title: "Scientific Staff Schematics NPC",
@@ -70,13 +80,5 @@ export const experiences = [
     content:
       "Get a role as problem setter. Responsible for setting up competitive programming problem.",
     techs: ["/icons/cpp.svg"],
-  },
-  {
-    id: "experience-lbe-ajk",
-    image: "/image/experience-lbe-ajk.png",
-    title: "LBE AJK Informatics ITS Participant",
-    date: "October 3 - 23, 2022",
-    content: "Learn to deploy laravel app using linux and nginx.",
-    techs: ["/icons/ubuntu.svg", "/icons/nginx.svg"],
   },
 ];

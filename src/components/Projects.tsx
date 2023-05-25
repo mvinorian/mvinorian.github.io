@@ -10,7 +10,7 @@ export default function Projects() {
       </h2>
 
       <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 grid-flow-row gap-4 w-full mt-8">
-        {projects.map((project) => (
+        {projects.slice(0, 3).map((project) => (
           <ProjectCard key={project.id} {...project}>
             {project.content}
           </ProjectCard>

@@ -7,8 +7,8 @@ type ProjectCardProps = {
   title: string;
   techs: string[];
   children: ReactNode;
-  live: string | null;
-  repository: string;
+  live?: string;
+  repository?: string;
 };
 
 export default function ProjectCard({
@@ -55,17 +55,18 @@ export default function ProjectCard({
 
         <div className="flex flex-row justify-start items-center mt-6">
           <Link
-            href={repository}
-            className="flex justify-start items-center font-poppins text-sm text-accent hover:text-secondary"
+            href={repository ?? ""}
+            className={`${repository ? "flex" : "hidden"}
+            flex justify-start items-center font-poppins text-sm text-accent hover:text-secondary`}
           >
             <Image src="/icons/github.svg" alt="" width={24} height={24} />
             <p className="ml-2 underline underline-offset-4">Repository</p>
           </Link>
 
           <Link
-            href={live === null ? "" : live}
+            href={live ?? ""}
             className={`${
-              live === null ? "hidden" : "flex"
+              live ? "flex" : "hidden"
             } justify-start items-center font-poppins text-sm text-accent hover:text-secondary ml-4`}
           >
             <Image src="/icons/page.svg" alt="" width={24} height={24} />
